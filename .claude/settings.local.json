@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl:*)",
+      "Bash(npm run dev:*)",
+      "Bash(lsof:*)",
+      "Bash(pkill:*)",
+      "Bash(npm start)",
+      "Bash(npm run build:*)",
+      "Bash(node:*)",
+      "Bash(npm install:*)",
+      "Bash(npx tsc:*)",
+      "Bash(rm:*)",
+      "Bash(npx serve:*)",
+      "Bash(true)",
+      "Bash(PORT=3000 npm start)",
+      "Bash(python3:*)",
+      "Bash(grep:*)"
+    ],
+    "deny": []
+  }
+}

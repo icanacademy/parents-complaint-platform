@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analytics Test</title>
+</head>
+<body>
+    <h1>Analytics API Test</h1>
+    <div id="result"></div>
+    
+    <script>
+        fetch('/api/analytics')
+            .then(response => response.json())
+            .then(data => {
+                console.log('Analytics data:', data);
+                document.getElementById('result').innerHTML = 
+                    '<pre>' + JSON.stringify(data, null, 2) + '</pre>';
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                document.getElementById('result').innerHTML = 
+                    '<p style="color: red;">Error: ' + error.message + '</p>';
+            });
+    </script>
+</body>
+</html>
